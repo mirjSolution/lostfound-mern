@@ -6,6 +6,12 @@ const errorHandler = require('./middleware/error');
 const cookieParser = require('cookie-parser');
 const connectDB = require('./config/db');
 const path = require('path');
+const mongoSanitize = require('express-mongo-sanitize');
+const helmet = require('helmet');
+const xss = require('xss-clean');
+const rateLimit = require('express-rate-limit');
+const hpp = require('hpp');
+const cors = require('cors');
 
 // Load env vars
 dotenv.config({ path: './config/config.env' });
@@ -31,6 +37,29 @@ app.use(cookieParser());
 // if (process.env.NODE_ENV === 'development') {
 //   app.use(morgan('dev'));
 // }
+
+// Sanitize data
+app.use(mongoSanitize());
+
+// Set security headers
+app.use(helmet());
+
+// Prevent XSS(Cross site scripting) attacks
+app.use(xss());
+
+// Rate limiting
+const limiter = rateLimit({
+  windowMs: 10 * 60 * 1000, // 10 mins
+  max: 200,
+});
+
+app.use(limiter);
+
+// Prevent http param pollution
+app.use(hpp());
+
+// Enable CORS
+app.use(cors());
 
 // Mount Routers
 app.use('/api/v1/items', items);
