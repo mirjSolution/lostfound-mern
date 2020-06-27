@@ -1,0 +1,72 @@
+.title {
+  text-align: center;
+  margin-bottom: 50x;
+}
+.print {
+  text-align: center;
+  color: brown;
+  font-size: 30px;
+}
+.print:hover {
+  cursor: pointer;
+}
+.article {
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid black;
+  border-bottom: none;
+  padding: 10px 10px;
+}
+.container-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.area {
+  border: 1px solid black;
+  padding: 10px;
+  border-right: none;
+}
+.package {
+  border: 1px solid black;
+  padding: 10px;
+  border-right: none;
+}
+.date {
+  border: 1px solid black;
+  padding: 10px;
+}
+.container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.finder {
+  border: 1px solid black;
+  padding: 10px;
+  border-top: none;
+  border-right: none;
+}
+.received {
+  border: 1px solid black;
+  padding: 10px;
+  border-top: none;
+  border-right: none;
+}
+.signature {
+  border: 1px solid black;
+  padding: 10px;
+  border-top: none;
+}
+@media print {
+  .print {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  .print {
+    display: none;
+  }
+}

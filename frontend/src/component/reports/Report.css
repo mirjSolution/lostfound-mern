@@ -1,0 +1,32 @@
+/* reports */
+
+/* Reports */
+
+.reports {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+.report {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.report .contacts-p {
+  font-size: 25px;
+}
+.reports .report {
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.reports .report i {
+  margin-right: 10px;
+}
+
+.reports a {
+  color: white;
+}

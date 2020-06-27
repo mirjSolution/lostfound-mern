@@ -1,0 +1,33 @@
+{
+  "name": "lostfound-mern",
+  "version": "1.0.0",
+  "description": "Lost and Found",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "server": "nodemon server",
+    "frontend": "npm start --prefix ../frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "author": "Rico Dato-on",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "config": "^3.3.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.9",
+    "mongoose-sequence": "^5.2.2",
+    "morgan": "^1.10.0",
+    "normalize-url": "^5.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.3"
+  }
+}

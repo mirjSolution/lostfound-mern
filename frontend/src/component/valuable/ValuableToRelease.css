@@ -1,0 +1,130 @@
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+.hidden {
+  visibility: hidden;
+}
+.date-search {
+  display: flex;
+  margin-bottom: 20px;
+}
+.date-from {
+  margin-right: 10px;
+}
+.date-from input {
+  font-size: 15px;
+}
+.date-to {
+  margin-right: 10px;
+}
+.date-to input {
+  font-size: 15px;
+}
+
+.dt-print i {
+  font-size: 25px;
+  color: brown;
+}
+
+.dt-print i:hover {
+  cursor: pointer;
+}
+
+.valuable-preview {
+  overflow-y: visible;
+}
+
+.valuable {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+.valuable tr:nth-of-type(odd) {
+  background: #eee;
+}
+.valuable th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+.valuable td,
+.valuable th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* 
+          Max width before this PARTICULAR table gets nasty
+          This query will take effect for any screen smaller than 760px
+          and also iPads specifically.
+          */
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+
+  .actions {
+    text-align: left;
+  }
+  .valuable,
+  .valuable thead,
+  .valuable tbody,
+  .valuable th,
+  .valuable td,
+  .valuable tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .valuable thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .valuable tr {
+    border: 1px solid #ccc;
+  }
+  .valuable td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  .valuable td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  /*
+       Label the data
+      */
+  .valuable td:nth-of-type(1):before {
+    content: 'Package No';
+  }
+  .valuable td:nth-of-type(2):before {
+    content: 'Date Found';
+  }
+  .valuable td:nth-of-type(3):before {
+    content: 'Area/Location';
+  }
+  .valuable td:nth-of-type(4):before {
+    content: 'Valuable';
+  }
+  .valuable td:nth-of-type(5):before {
+    content: 'Finder';
+  }
+  .dt-print {
+    display: none;
+  }
+}
+
+@media print {
+  .dt-print {
+    display: none;
+  }
+}

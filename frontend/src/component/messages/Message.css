@@ -1,0 +1,110 @@
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+.message-preview {
+  overflow-y: visible;
+}
+.actions {
+  text-align: center;
+  width: 150px;
+}
+.edit {
+  padding: 0 12px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+.delete {
+  padding: 0 5px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+.message {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+.message tr:nth-of-type(odd) {
+  background: #eee;
+}
+.message th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+.message td,
+.message th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.message .s-padding {
+  padding: 15px;
+}
+/* 
+      Max width before this PARTICULAR table gets nasty
+      This query will take effect for any screen smaller than 760px
+      and also iPads specifically.
+      */
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+
+  .actions {
+    text-align: left;
+  }
+  .message,
+  .message thead,
+  .message tbody,
+  .message th,
+  .message td,
+  .message tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .message thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .message tr {
+    border: 1px solid #ccc;
+  }
+  .message td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  .message td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  /*
+   Label the data
+  */
+  .message td:nth-of-type(1):before {
+    content: 'Date';
+  }
+  .message td:nth-of-type(2):before {
+    content: 'Name';
+  }
+  .message td:nth-of-type(3):before {
+    content: 'Email';
+  }
+  .message td:nth-of-type(4):before {
+    content: 'Phone';
+  }
+  .message td:nth-of-type(5):before {
+    content: 'Messages';
+  }
+}
