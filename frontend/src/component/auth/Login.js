@@ -33,9 +33,11 @@ const Login = ({ login, isAuthenticated }) => {
       </p>
       <p>Username: admin@admin.com</p>
       <p>Password: 123456</p>
-      <p>
-        <a href='https://lostfound-application.herokuapp.com/'></a>Github Link
-      </p>
+
+      <a href='https://github.com/mirjSolution/lostfound-mern'>
+        <p>GitHub Link</p>
+      </a>
+
       <form className='form' onSubmit={(e) => onSubmit(e)}>
         <div className='form-group'>
           <input

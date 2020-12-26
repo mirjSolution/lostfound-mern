@@ -1,4 +1,4 @@
-# Lo Application
+# Lost And Found Application
 
 > Using MongoDB, Express, React-Redux and NodeJS for an application called Ticket-App. This app is for hotel and hospital use so if the guest or a patient leave a personal things on their room and the cleaner found it they must turn it over to person in charge and logged it in the app. It will automatically produced required reports such as releasing the valuable things if more than 6 months it will automatically generate it, non-valuable 3 months and perishable 1 day. With user authentication only admin can delete records.
 
