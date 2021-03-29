@@ -49,7 +49,8 @@ const GstClaimStub = ({
         {/*<h2>THE PENINSULA MANILA</h2> <h2>Guest Claiming Stub</h2>*/}
         {/*<h2>MANILA DOCTORS HOSPITAL</h2> <h3>Guest Claiming Stub</h3>*/}
         {/*<h2>Four Seasons Hotel Toronto</h2> <h2>Guest Claiming Stub</h2>*/}
-        <h2>LOST AND FOUND</h2> <h3>Guest Claiming Stub</h3>
+        {/* <h2>LOST AND FOUND</h2> <h3>Guest Claiming Stub</h3> */}
+        <h2>HOTEL OKURA - MANILA</h2> <h3>Guest Claiming Stub</h3>
         <p>{datefound}</p>
       </div>
       <div className='print'>

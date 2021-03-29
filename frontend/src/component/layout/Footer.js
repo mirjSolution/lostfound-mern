@@ -5,34 +5,21 @@ const Footer = () => {
     <footer className='footer bg-dark'>
       <div className='social'>
         <a
-          href='https://m.facebook.com'
+          href='https://www.facebook.com/hotelokuramnl/'
           target='_blank'
           rel='noopener noreferrer'
         >
           <i className='fab fa-facebook fa-2x'></i>
         </a>
         <a
-          href='https://mobile.twitter.com'
+          href='https://www.hotelokuramanila.com/'
           target='_blank'
           rel='noopener noreferrer'
         >
-          <i className='fab fa-twitter fa-2x'></i>
+          <i className='fas fa-globe fa-2x'></i>
         </a>
-        <a
-          href='https://www.youtube.com'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <i className='fab fa-youtube fa-2x'></i>
-        </a>
-        <a
-          href='https://ca.linkedin.com'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <i className='fab fa-linkedin fa-2x'></i>
-        </a>
-        <p>Copyright mirjSolution &copy; 2020</p>
+
+        <p>Copyright mirjSolution &copy; 2021</p>
         {/*Normal Footer*/}
         {/*<div className='social'>
           <a

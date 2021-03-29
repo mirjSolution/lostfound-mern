@@ -28,7 +28,7 @@ const Login = ({ login, isAuthenticated }) => {
   return (
     <Fragment>
       <h1 className='large text-primary'>Login</h1>
-      <p className='lead'>
+      {/*  <p className='lead'>
         <i className='fas fa-user'></i> Sign Into Your Account
       </p>
       <p>Username: admin@admin.com</p>
@@ -36,7 +36,10 @@ const Login = ({ login, isAuthenticated }) => {
 
       <a href='https://github.com/mirjSolution/lostfound-mern'>
         <p>GitHub Link</p>
-      </a>
+      </a> */}
+      <p className='lead'>
+        <i className='fas fa-user'></i> Sign Into Your Account
+      </p>
 
       <form className='form' onSubmit={(e) => onSubmit(e)}>
         <div className='form-group'>

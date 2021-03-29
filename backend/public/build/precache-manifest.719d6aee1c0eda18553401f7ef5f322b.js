@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59b6ff3e6ac29e972c8aba20e3edc208",
+    "revision": "5fc276e17bfd60bd5d68da4c933579c2",
     "url": "/index.html"
   },
   {
-    "revision": "77eaaffd661e4839ca08",
-    "url": "/static/css/main.8b01037b.chunk.css"
+    "revision": "dc6abe8abec4a18311fd",
+    "url": "/static/css/main.7bec9449.chunk.css"
   },
   {
     "revision": "20eb18e385b9625a9c9e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.05b84679.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "77eaaffd661e4839ca08",
-    "url": "/static/js/main.0e2b4b30.chunk.js"
+    "revision": "dc6abe8abec4a18311fd",
+    "url": "/static/js/main.d37a757a.chunk.js"
   },
   {
     "revision": "700d31d1c6f37b7bdc51",
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Logo.3d6a7cef.svg"
   },
   {
-    "revision": "75165cd7dbc50486702a23e4aabf91fb",
-    "url": "/static/media/contact-back.75165cd7.jpg"
+    "revision": "c6104cfd269247da72e2ff534975bc19",
+    "url": "/static/media/hotel-okura.c6104cfd.jpg"
   }
 ]);

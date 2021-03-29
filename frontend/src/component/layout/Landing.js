@@ -15,7 +15,8 @@ const Landing = ({ isAuthenticated }) => {
         <div className='dark-overlay'>
           <div className='landing-inner'>
             {/*<h1 className='x-large'>Four Seasons Hotel - Toronto</h1>*/}
-            <h1 className='x-large'>LOST AND FOUND APPLICATION</h1>
+            {/* <h1 className='x-large'>LOST AND FOUND APPLICATION</h1> */}
+            <h1 className='x-large'>HOTEL OKURA - MANILA</h1>
             {/*<h1 className='x-large'>The Anndore House</h1>*/}
             {/*<h1 className='x-large'>Manila Doctors Hospital</h1>*/}
             <p className='lead'>Collection of Lost and Found Items</p>

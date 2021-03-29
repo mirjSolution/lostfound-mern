@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b01037b.chunk.css",
-    "main.js": "/static/js/main.0e2b4b30.chunk.js",
-    "main.js.map": "/static/js/main.0e2b4b30.chunk.js.map",
+    "main.css": "/static/css/main.7bec9449.chunk.css",
+    "main.js": "/static/js/main.d37a757a.chunk.js",
+    "main.js.map": "/static/js/main.d37a757a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.84578d5e.js",
     "runtime-main.js.map": "/static/js/runtime-main.84578d5e.js.map",
     "static/js/2.05b84679.chunk.js": "/static/js/2.05b84679.chunk.js",
     "static/js/2.05b84679.chunk.js.map": "/static/js/2.05b84679.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3d02063e99931fc84561f359b1be634d.js": "/precache-manifest.3d02063e99931fc84561f359b1be634d.js",
+    "precache-manifest.719d6aee1c0eda18553401f7ef5f322b.js": "/precache-manifest.719d6aee1c0eda18553401f7ef5f322b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8b01037b.chunk.css.map": "/static/css/main.8b01037b.chunk.css.map",
+    "static/css/main.7bec9449.chunk.css.map": "/static/css/main.7bec9449.chunk.css.map",
     "static/js/2.05b84679.chunk.js.LICENSE.txt": "/static/js/2.05b84679.chunk.js.LICENSE.txt",
     "static/media/Logo.3d6a7cef.svg": "/static/media/Logo.3d6a7cef.svg",
-    "static/media/App.css": "/static/media/contact-back.75165cd7.jpg"
+    "static/media/App.css": "/static/media/hotel-okura.c6104cfd.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.84578d5e.js",
     "static/js/2.05b84679.chunk.js",
-    "static/css/main.8b01037b.chunk.css",
-    "static/js/main.0e2b4b30.chunk.js"
+    "static/css/main.7bec9449.chunk.css",
+    "static/js/main.d37a757a.chunk.js"
   ]
 }
