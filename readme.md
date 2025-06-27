@@ -68,10 +68,10 @@ Make sure you are inside the backend folder
 npm run dev
 ```
 
-### Demo
+[//]: <> ### Demo
 
-The APP is live at (https://lostfound-application.herokuapp.com/)
+[//]: <> The APP is live at (https://lostfound-application.herokuapp.com/)
 
-- Version: 1.0.0
-- License: MIT
-- Author: Rico John Dato-on
+[//]: <> - Version: 1.0.0
+[//]: <> - License: MIT
+[//]: <> - Author: Rico John Dato-on
